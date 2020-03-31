@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+    {% block title %}
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Corona Virus Infection Probebility Detector</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Covid-19 Detector</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us!</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Contact us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+<div class="container">
+  <h2 class="text-center mt-3"> Corona Virus Probability Detector </h2>
+  <form action="/" method="POST">
+    <div class="form-group">
+      <label for="fever Value">Enter Your Fever Value</label>
+      <input type="text" class="form-control" id="fever" name="fever" placeholder="Enter Your fever value">
+    </div>
+    <div class="form-group">
+      <label for="age Value">Enter Your Age Value</label>
+      <input type="text" class="form-control" id="age" name="age" placeholder="Enter Your age value">
+    </div>
+    
+    <div class="form-group">
+      <label for="bodyPain">Body Pain</label>
+      <select custom-select class="form-control custom-select" name="bodyPain" id="bodyPain">
+        <option value="0">No Pain</option>
+        <option value="1">Sever Pain</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="runnyNose">Runny Nose</label>
+      <select custom-select class="form-control custom-select" name="runnyNose" id="runnyNose">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Moderate_severe_cough">Moderate severe cough</label>
+      <select custom-select class="form-control custom-select" name="Moderate_severe_cough" id="Moderate_severe_cough">
+        <option value="0">Yes</option>
+        <option value="1">NO</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Dry_Cough">Dry_Cough</label>
+      <select custom-select class="form-control custom-select" name="Dry_Cough" id="Dry_Cough">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="runnyNose">Gender</label>
+      <select custom-select class="form-control custom-select" name="Gender" id="Gender">
+        <option value="1">Male</option>
+        <option value="0">Female</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Sore_throat">Sore_throat</label>
+      <select custom-select class="form-control custom-select" name="Sore_throat" id="Sore_throat">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Change_in_Appetite">Change_in_Appetite</label>
+      <select custom-select class="form-control custom-select" name="Change_in_Appetite" id="Change_in_Appetite">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Feeling_breathless">Feeling_breathless</label>
+      <select custom-select class="form-control custom-select" name="Feeling_breathless" id="Feeling_breathless">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Weakness">Weakness</label>
+      <select custom-select class="form-control custom-select" name="Weakness" id="Weakness">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="close_contact">close_contact</label>
+      <select custom-select class="form-control custom-select" name="close_contact" id="close_contact">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="kidneydis">kidneydis</label>
+      <select custom-select class="form-control custom-select" name="kidneydis" id="kidneydis">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Diabetes">Diabetes</label>
+      <select custom-select class="form-control custom-select" name="Diabetes" id="Diabetes">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="heart_dis">heart_dis</label>
+      <select custom-select class="form-control custom-select" name="heart_dis" id="heart_dis">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="progressin48hr">progressin48hr</label>
+      <select custom-select class="form-control custom-select" name="progressin48hr" id="progressin48hr">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select>
+    </div>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+  </form>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+  {% endblock %}
+</html>
